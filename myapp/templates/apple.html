@@ -1,0 +1,97 @@
+{% load static %}
+<!DOCTYPE html>
+<html  >
+<head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v5.3.5, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="{% static '/apple/images/logo.png'%}" type="image/x-icon">
+  <meta name="description" content="">
+  
+  
+  <title>APPLE</title>
+  <link rel="stylesheet" href="{% static '/apple/web/assets/mobirise-icons2/mobirise2.css' %}">
+  <link rel="stylesheet" href="{% static '/apple/tether/tether.min.css'%}">
+  <link rel="stylesheet" href="{% static '/apple/bootstrap/css/bootstrap.min.css'%}">
+  <link rel="stylesheet" href="{% static '/apple/bootstrap/css/bootstrap-grid.min.css'%}">
+  <link rel="stylesheet" href="{% static '/apple/bootstrap/css/bootstrap-reboot.min.css'%}">
+  <link rel="stylesheet" href="{% static '/apple/dropdown/css/style.css'%}">
+  <link rel="stylesheet" href="{% static '/apple/socicon/css/styles.css'%}">
+  <link rel="stylesheet" href="{% static '/apple/theme/css/style.css'%}">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
+  <link rel="preload" as="style" href="{% static '/apple/mobirise/css/mbr-additional.css'%}"><link rel="stylesheet" href="{% static '/apple/mobirise/css/mbr-additional.css'%}" type="text/css">
+  
+  
+  
+  
+</head>
+<body>
+  
+  <section class="menu menu1 cid-syCOBnPtto" once="menu" id="menu1-0">
+    
+
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+                
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-black display-7" href="{%url 'contents' %}">INVESTMENT ADVICE</a></span>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black display-4" href="{%url 'home' %}">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link link text-black display-4" href="{%url 'contents' %}">BACK</a></li></ul>
+                
+                
+            </div>
+        </div>
+    </nav>
+</section>
+
+<section class="video1 cid-syCOHwag0y" id="video1-1">
+    
+    
+    <div class="align-center container-fluid">
+        <div class="mbr-section-head">
+            <h4 class="mbr-section-title mbr-fonts-style mb-0 display-2">
+                <strong>APPLE</strong></h4>
+            
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-12 col-lg-10">
+                <div class="box">
+                    <div class="mbr-media show-modal align-center" data-modal=".modalWindow">
+                        {% autoescape off %}
+                        {{ apple }}
+                        {% endautoescape %}
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="modalWindow" style="display: none;">
+            <div class="modalWindow-container">
+                <div class="modalWindow-video-container">
+                    <div class="modalWindow-video">
+                        <img src="data:image/png;base64,{{ apple|safe }}">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+  
+</body>
+</html>
